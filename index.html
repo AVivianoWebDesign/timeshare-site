@@ -6,11 +6,20 @@
   <title>The Reality of Timeshares | Know your options before you pay anyone</title>
   <meta name="description" content="A plain-English guide to how timeshares are sold and what responsible exit options look like. Compare common approaches used by national timeshare exit providers and learn what to ask before you hire." />
   <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://example.com/" />
+
+  <!-- ✅ UPDATED to your Netlify URL -->
+  <link rel="canonical" href="https://charming-stardust-bb342a.netlify.app/" />
+
   <meta property="og:title" content="The Reality of Timeshares" />
   <meta property="og:description" content="Know your options before you pay anyone. Compare approaches used by national providers and learn what to ask." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="whoreallysellstimeshares.jpg" />
+
+  <!-- ✅ Added OG URL -->
+  <meta property="og:url" content="https://charming-stardust-bb342a.netlify.app/" />
+
+  <!-- ✅ Use absolute image URL for reliable social previews -->
+  <meta property="og:image" content="https://charming-stardust-bb342a.netlify.app/whoreallysellstimeshares.jpg" />
+
   <meta name="theme-color" content="#0b2a3a" />
   <link rel="preload" href="styles.css" as="style" />
   <link rel="stylesheet" href="styles.css" />
@@ -306,18 +315,18 @@
       <div class="container">
         <header class="section-head">
           <h2>Request a free consultation</h2>
-          <p>Send your details and we’ll respond with next steps. </p>
+          <p>Send your details and we’ll respond with next steps.</p>
         </header>
 
         <div class="contact-grid">
+          <!-- ✅ Netlify form -->
           <form name="contact" method="POST" netlify netlify-honeypot="bot-field" action="/success.html">
-  <input type="hidden" name="form-name" value="contact">
-
-  <p style="display:none;">
-    <label>Don’t fill this out:
-      <input name="bot-field">
-    </label>
-  </p>
+            <input type="hidden" name="form-name" value="contact" />
+            <p style="display:none;">
+              <label>Don’t fill this out:
+                <input name="bot-field" />
+              </label>
+            </p>
 
             <div class="field">
               <label for="name">Name</label>
@@ -374,7 +383,23 @@
       <h2 id="modal-title">Get a free consultation</h2>
       <p class="muted">Share the basics and we’ll follow up.</p>
 
-      <form class="form" id="popup-form" action="submit_form.php" method="POST">
+      <!-- ✅ Netlify form (replaced PHP) -->
+      <form
+        class="form"
+        id="popup-form"
+        name="free-consultation"
+        method="POST"
+        netlify
+        netlify-honeypot="bot-field"
+        action="/success.html"
+      >
+        <input type="hidden" name="form-name" value="free-consultation" />
+        <p style="display:none;">
+          <label>Don’t fill this out:
+            <input name="bot-field" />
+          </label>
+        </p>
+
         <div class="field">
           <label for="m-name">Name</label>
           <input id="m-name" name="name" type="text" autocomplete="name" required />
