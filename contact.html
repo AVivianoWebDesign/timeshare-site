@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Timeshare Reality</title>
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.timesharereality.com/contact.html" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container" style="padding:24px;">
+    <h1>Contact</h1>
+    <p>Request a free consultation using the form below.</p>
+
+    <form action="https://formspree.io/f/xeeooznw" method="POST">
+      <div class="field">
+        <label>Name</label>
+        <input name="name" type="text" required />
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input name="email" type="email" required />
+      </div>
+
+      <div class="field">
+        <label>Phone (optional)</label>
+        <input name="phone" type="tel" />
+      </div>
+
+      <div class="field">
+        <label>Message</label>
+        <textarea name="message" rows="5" required></textarea>
+      </div>
+
+      <input type="hidden" name="_redirect" value="success.html" />
+      <input type="text" name="_gotcha" style="display:none" />
+
+      <button class="btn btn-primary" type="submit">Send</button>
+    </form>
+
+    <p style="margin-top:16px;"><a href="index.html">← Back to home</a></p>
+  </main>
+</body>
+</html>
