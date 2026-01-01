@@ -3,40 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Free Timeshare Consultation</title>
+  <title>Request a Free Consultation</title>
+  <meta name="description" content="Request a free timeshare consultation. Get clear next steps and understand your options.">
+  <link rel="canonical" href="https://yourusername.github.io/your-repo-name/">
 
-  <!-- REQUIRED FOR NETLIFY -->
-  <link rel="canonical" href="https://charming-stardust-bb342a.netlify.app/">
-
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 40px;
+    }
+    main {
+      max-width: 600px;
+      background: #fff;
+      padding: 30px;
+      margin: auto;
+      border-radius: 6px;
+    }
+    label {
+      display: block;
+      margin-bottom: 15px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+    }
+    button {
+      padding: 12px 20px;
+      background: #0b2a3a;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #09405c;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Request a Free Consultation</h1>
-</header>
-
 <main>
+  <h1>Request a Free Consultation</h1>
+  <p>Fill out the form below and we’ll contact you shortly.</p>
 
-  <!-- CONTACT FORM (NETLIFY) -->
-  <form
-    name="contact"
-    method="POST"
-    data-netlify="true"
-    netlify-honeypot="bot-field"
-    action="success.html"
-  >
-
-    <!-- REQUIRED -->
-    <input type="hidden" name="form-name" value="contact">
-
-    <!-- BOT TRAP -->
-    <p style="display:none;">
-      <label>Don’t fill this out:
-        <input name="bot-field">
-      </label>
-    </p>
+  <!-- ✅ FORMSPREE FORM -->
+  <form action="https://formspree.io/f/xeeooznw" method="POST">
 
     <label>
       Name
@@ -49,18 +62,23 @@
     </label>
 
     <label>
-      Phone
+      Phone (optional)
       <input type="tel" name="phone">
     </label>
 
     <label>
       Message
-      <textarea name="message" required></textarea>
+      <textarea name="message" rows="5" required></textarea>
     </label>
+
+    <!-- Redirect after submit -->
+    <input type="hidden" name="_redirect" value="success.html">
+
+    <!-- Prevent spam -->
+    <input type="text" name="_gotcha" style="display:none">
 
     <button type="submit">Send Request</button>
   </form>
-
 </main>
 
 </body>
