@@ -1,85 +1,164 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Request a Free Consultation</title>
-  <meta name="description" content="Request a free timeshare consultation. Get clear next steps and understand your options.">
-  <link rel="canonical" href="https://yourusername.github.io/your-repo-name/">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Reality of Timeshares | Know your options before you pay anyone</title>
+  <meta name="description" content="A plain-English guide to how timeshares are sold and what responsible exit options look like. Compare common approaches used by national timeshare exit providers and learn what to ask before you hire." />
+  <meta name="robots" content="index,follow" />
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      padding: 40px;
-    }
-    main {
-      max-width: 600px;
-      background: #fff;
-      padding: 30px;
-      margin: auto;
-      border-radius: 6px;
-    }
-    label {
-      display: block;
-      margin-bottom: 15px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 6px;
-    }
-    button {
-      padding: 12px 20px;
-      background: #0b2a3a;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #09405c;
-    }
-  </style>
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/YOUR-REPO/" />
+
+  <meta property="og:title" content="The Reality of Timeshares" />
+  <meta property="og:description" content="Know your options before you pay anyone." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<main>
-  <h1>Request a Free Consultation</h1>
-  <p>Fill out the form below and we’ll contact you shortly.</p>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top">Timeshare Truth</a>
+    <nav class="site-nav">
+      <a href="#reality">Reality</a>
+      <a href="#options">Exit Options</a>
+      <a href="#compare">Compare</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-sm" href="#contact">Free Consultation</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- ✅ FORMSPREE FORM -->
-  <form action="https://formspree.io/f/xeeooznw" method="POST">
+<main id="main">
 
-    <label>
-      Name
-      <input type="text" name="name" required>
-    </label>
+<section id="top" class="hero">
+  <div class="container">
+    <h1>Who Really Sells Timeshares?</h1>
+    <p>If you’re paying rising fees or feeling stuck, this page explains what’s real and what to ask before hiring anyone.</p>
+    <button class="btn btn-primary" data-open-modal>Get a free consultation</button>
+  </div>
+</section>
 
-    <label>
-      Email
-      <input type="email" name="email" required>
-    </label>
+<section id="reality" class="section">
+  <div class="container">
+    <h2>What’s actually happening</h2>
+    <p>Understanding the incentives behind timeshare sales and retention matters.</p>
+  </div>
+</section>
 
-    <label>
-      Phone (optional)
-      <input type="tel" name="phone">
-    </label>
+<section id="options" class="section section-alt">
+  <div class="container">
+    <h2>Exit paths</h2>
+    <ul>
+      <li>Developer surrender / deed-back</li>
+      <li>Transfer or resale (when eligible)</li>
+      <li>Attorney-led dispute</li>
+      <li>Exit companies (varies widely)</li>
+    </ul>
+  </div>
+</section>
 
-    <label>
-      Message
-      <textarea name="message" rows="5" required></textarea>
-    </label>
+<section id="compare" class="section">
+  <div class="container">
+    <h2>Compare national providers</h2>
+    <p>Always verify contracts, timelines, and refund policies.</p>
+  </div>
+</section>
 
-    <!-- Redirect after submit -->
-    <input type="hidden" name="_redirect" value="success.html">
+<section id="faq" class="section section-alt">
+  <div class="container">
+    <h2>FAQ</h2>
+    <details>
+      <summary>Should I stop paying my maintenance fees?</summary>
+      <p>Get written guidance that explains risks before doing anything.</p>
+    </details>
+    <details>
+      <summary>What’s the difference between transfer and cancellation?</summary>
+      <p>Transfer changes ownership. Cancellation aims to terminate obligations.</p>
+    </details>
+  </div>
+</section>
 
-    <!-- Prevent spam -->
-    <input type="text" name="_gotcha" style="display:none">
+<!-- ✅ CONTACT SECTION (FORMSPREE FIXED) -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Request a free consultation</h2>
+    <p>Send your details and we’ll respond with next steps.</p>
 
-    <button type="submit">Send Request</button>
-  </form>
+    <form action="https://formspree.io/f/xeeooznw" method="POST">
+      <div class="field">
+        <label>Name</label>
+        <input type="text" name="name" required />
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input type="email" name="email" required />
+      </div>
+
+      <div class="field">
+        <label>Phone (optional)</label>
+        <input type="tel" name="phone" />
+      </div>
+
+      <div class="field">
+        <label>Message</label>
+        <textarea name="message" rows="5" required></textarea>
+      </div>
+
+      <!-- Formspree redirect -->
+      <input type="hidden" name="_redirect" value="success.html" />
+
+      <!-- Spam honeypot -->
+      <input type="text" name="_gotcha" style="display:none" />
+
+      <button class="btn btn-primary" type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
 </main>
 
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Timeshare Truth. Educational content only.</p>
+  </div>
+</footer>
+
+<!-- ✅ MODAL FORM (ALSO FORMSPREE FIXED) -->
+<div class="modal" id="cta-modal" aria-hidden="true">
+  <div class="modal-panel">
+    <button class="modal-close" data-close-modal>&times;</button>
+    <h2>Get a free consultation</h2>
+
+    <form action="https://formspree.io/f/xeeooznw" method="POST">
+      <label>Name
+        <input type="text" name="name" required />
+      </label>
+
+      <label>Email
+        <input type="email" name="email" required />
+      </label>
+
+      <label>Phone
+        <input type="tel" name="phone" />
+      </label>
+
+      <label>Message
+        <textarea name="message" required></textarea>
+      </label>
+
+      <input type="hidden" name="_redirect" value="success.html" />
+      <input type="text" name="_gotcha" style="display:none" />
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
