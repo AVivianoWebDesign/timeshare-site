@@ -306,11 +306,19 @@
       <div class="container">
         <header class="section-head">
           <h2>Request a free consultation</h2>
-          <p>Send your details and we’ll respond with next steps. (Demo form included—replace email destination in <code>submit_form.php</code>.)</p>
+          <p>Send your details and we’ll respond with next steps. </p>
         </header>
 
         <div class="contact-grid">
-          <form class="form" id="contact-form" action="submit_form.php" method="POST">
+          <form name="contact" method="POST" netlify netlify-honeypot="bot-field" action="/success.html">
+  <input type="hidden" name="form-name" value="contact">
+
+  <p style="display:none;">
+    <label>Don’t fill this out:
+      <input name="bot-field">
+    </label>
+  </p>
+
             <div class="field">
               <label for="name">Name</label>
               <input id="name" name="name" type="text" autocomplete="name" required />
