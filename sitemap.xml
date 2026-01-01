@@ -4,4 +4,9 @@
     <loc>https://timesharereality.com/</loc>
     <priority>1.0</priority>
   </url>
+
+  <url><loc>https://www.timesharereality.com/privacy.html</loc></url>
+<url><loc>https://www.timesharereality.com/terms.html</loc></url>
+<url><loc>https://www.timesharereality.com/contact.html</loc></url>
+
 </urlset>
