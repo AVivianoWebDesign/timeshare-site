@@ -344,134 +344,13 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Timeshare Truth. Educational content only; not legal advice.</p>
+      <p>© <span id="year"></span> © 2026 Timeshare Truth. timesharereality.com is not a law firm. By providing my contact information I am giving timesharereality.com and its partners permission to contact me about this and future offers using the information provided including calls and text messages to my wireless telephone numbers. I also consent to use of emails and the use of an automated dialing device and prerecorded messages. I understand that my permission described herein overrides my listing on any state or federal do not call list and any prior listing on the do not call lists of our partners and is optional.</p>
       <p class="muted small"></p>
     </div>
   </footer>
 
-  <!-- Modal (accessible popup) -->
-  <div class="modal" id="cta-modal" aria-hidden="true" aria-labelledby="modal-title" role="dialog">
-    <div class="modal-backdrop" data-close-modal></div>
-    <div class="modal-panel" role="document">
-      <button class="modal-close" type="button" aria-label="Close" data-close-modal>&times;</button>
-      <h2 id="modal-title">Get a free consultation</h2>
-      <p class="muted">Share the basics and we’ll follow up.</p>
-
-      <!-- ✅ Netlify form (replaced PHP) -->
-      <form
-        class="form"
-        id="popup-form"
-        name="free-consultation"
-        method="POST"
-        netlify
-        netlify-honeypot="bot-field"
-        action="/success.html"
-      >
-        <input type="hidden" name="form-name" value="free-consultation" />
-        <p style="display:none;">
-          <label>Don’t fill this out:
-            <input name="bot-field" />
-          </label>
-        </p>
-
-        <div class="field">
-          <label for="m-name">Name</label>
-          <input id="m-name" name="name" type="text" autocomplete="name" required />
-        </div>
-        <div class="field">
-          <label for="m-email">Email</label>
-          <input id="m-email" name="email" type="email" autocomplete="email" required />
-        </div>
-        <div class="field">
-          <label for="m-phone">Phone (optional)</label>
-          <input id="m-phone" name="phone" type="tel" autocomplete="tel" />
-        </div>
-        <div class="field">
-          <label for="m-message">Message</label>
-          <textarea id="m-message" name="message" rows="4" required placeholder="Resort, mortgage?, what happened?"></textarea>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- ✅ CONTACT SECTION (FORMSPREE FIXED) -->
-<section id="contact" class="section">
-  <div class="container">
-    <h2>Request a free consultation</h2>
-    <p>Send your details and we’ll respond with next steps.</p>
-
-    <form action="https://formspree.io/f/xeeooznw" method="POST">
-      <div class="field">
-        <label>Name</label>
-        <input type="text" name="name" required />
-      </div>
-
-      <div class="field">
-        <label>Email</label>
-        <input type="email" name="email" required />
-      </div>
-
-      <div class="field">
-        <label>Phone (optional)</label>
-        <input type="tel" name="phone" />
-      </div>
-
-      <div class="field">
-        <label>Message</label>
-        <textarea name="message" rows="5" required></textarea>
-      </div>
-
-      <!-- Formspree redirect -->
-      <input type="hidden" name="_redirect" value="success.html" />
-
-      <!-- Spam honeypot -->
-      <input type="text" name="_gotcha" style="display:none" />
-
-      <button class="btn btn-primary" type="submit">Send</button>
-    </form>
-  </div>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <p>© 2026 Timeshare Truth. Educational content only.</p>
-  </div>
-</footer>
-
-<!-- ✅ MODAL FORM (ALSO FORMSPREE FIXED) -->
-<div class="modal" id="cta-modal" aria-hidden="true">
-  <div class="modal-panel">
-    <button class="modal-close" data-close-modal>&times;</button>
-    <h2>Get a free consultation</h2>
-
-    <form action="https://formspree.io/f/xeeooznw" method="POST">
-      <label>Name
-        <input type="text" name="name" required />
-      </label>
-
-      <label>Email
-        <input type="email" name="email" required />
-      </label>
-
-      <label>Phone
-        <input type="tel" name="phone" />
-      </label>
-
-      <label>Message
-        <textarea name="message" required></textarea>
-      </label>
-
-      <input type="hidden" name="_redirect" value="success.html" />
-      <input type="text" name="_gotcha" style="display:none" />
-
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
-</div>
-
+ 
+    
 <script src="script.js"></script>
 </body>
 </html>
