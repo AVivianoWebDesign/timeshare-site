@@ -344,6 +344,36 @@
       <p class="muted small"></p>
     </div>
   </footer>
+<!-- ✅ MODAL FORM (ALSO FORMSPREE FIXED) -->
+<div class="modal" id="cta-modal" aria-hidden="true">
+  <div class="modal-panel">
+    <button class="modal-close" data-close-modal>&times;</button>
+    <h2>Get a free consultation</h2>
+
+    <form action="https://formspree.io/f/xeeooznw" method="POST">
+      <label>Name
+        <input type="text" name="name" required />
+      </label>
+
+      <label>Email
+        <input type="email" name="email" required />
+      </label>
+
+      <label>Phone
+        <input type="tel" name="phone" />
+      </label>
+
+      <label>Message
+        <textarea name="message" required></textarea>
+      </label>
+
+      <input type="hidden" name="_redirect" value="success.html" />
+      <input type="text" name="_gotcha" style="display:none" />
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
 
  
     
