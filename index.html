@@ -313,13 +313,18 @@
         </header>
 
         <div class="contact-grid">
-          <!-- ✅ Netlify form -->
-          <form name="contact" method="POST" netlify netlify-honeypot="bot-field" action="/success.html">
-            <input type="hidden" name="form-name" value="contact" />
-            <p style="display:none;">
-              <label>Don’t fill this out:
-                <input name="bot-field" />
-              </label>
+    <form
+  action="https://formspree.io/f/xeeooznw"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
             </p>
 
             <div class="field">
